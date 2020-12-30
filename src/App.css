@@ -203,10 +203,12 @@ form input:focus {
   flex-direction: column;
   margin-left: 20px;
   background-color: rgba(184, 243, 240, 0.897);
+  border-radius: 8px;
 }
 .Movie-Description-Image {
   height: 40%;
   width: 40%;
+  border-radius: 8px;
 }
 .Movie-Description-informations p {
   font-size: 20px;

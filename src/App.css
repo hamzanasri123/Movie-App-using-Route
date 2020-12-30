@@ -1,16 +1,39 @@
-body{
+body {
   background-color: #282c34;
-  background-image: url(https://images.cdn1.stockunlimited.net/preview1300/cinema-background-with-movie-objects_1823387.jpg);
+  background-image: url(https://previews.123rf.com/images/ghenadie/ghenadie1512/ghenadie151200021/49478710-cinema-theater-background-with-blue-seats-and-blue-curtains.jpg);
 }
-.tunibest {
+.logo {
+  display: flex;
+}
+.movie-app {
   text-align: center;
-  font-family: 'Papyrus', fantasy;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: 600;
   font-size: 40px;
-  color: gold;
+  color: rgb(233, 233, 233);
 }
 /* search  */
+nav {
+  background-color: #000000;
 
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  border-bottom: #ffffff;
+  align-items: center;
+}
+.logo > img {
+  width: 100px;
+  height: 100px;
+}
+h1 > span {
+  color: red;
+}
+.logo > h1 {
+  margin-right: 30px;
+}
 .search-container {
   margin: 40px 0px;
   display: flex;
@@ -23,9 +46,11 @@ body{
   color: grey;
   padding-left: 10px;
   padding: 8px 0 8px 10px;
+  transition: 0.4s ease-out;
 }
 .search-container input:focus {
   outline: 0;
+  box-shadow: 0px 0px 8px 3px grey;
 }
 .star-rating {
   font-size: 24px;
@@ -40,15 +65,15 @@ body{
   text-align: center;
   flex-direction: column;
   width: 250px;
-  height: 550px;
+  height: 500px;
   overflow: hidden;
   margin: 30px 40px;
   transform: scale(0.95);
   transition: all 0.5s;
-  background-color: #1e1b26;
+  background-color: #1e1b263f;
   overflow: hidden;
 }
-.Movie-Container:hover{
+.Movie-Container:hover {
   box-shadow: 0 5px 10px -12.125px rgba(0, 0, 0, 0.2);
   transform: scale(1);
 }
@@ -68,8 +93,9 @@ img {
   font-size: 22px;
   margin: 0px 10px;
   color: white;
+  text-decoration: none;
 }
-.year{
+.year {
   margin: 5px;
   color: #ffffff;
 }
@@ -89,25 +115,24 @@ img {
 }
 .Add-btn {
   border-radius: 5px;
-  background-color: lightseagreen;
+  background-color: rgb(153, 153, 153);
   border: transparent;
   color: white;
-  font-size: 20px;
+  font-size: auto;
   padding: 8px 20px;
   margin: 30px 40px;
   cursor: pointer;
-  width: 200px;
-  height: 100px;
-  font-size: 30px;
+  width: 80px;
+  height: 50px;
 }
 .Add-btn:hover {
-  background-color: rgba(32, 178, 170, 0.8);
+  background-color: rgba(75, 75, 75, 0.8);
 }
 .Add-btn:focus {
   outline: 0;
 }
 .stars {
-  color: gold;
+  color: rgb(156, 133, 1);
   font-size: 20px;
   padding-left: 5px;
 }
@@ -163,25 +188,25 @@ form input:focus {
 .Modal-btn:focus {
   outline: 0;
 }
-.desc{
+.desc {
   margin-top: 50px;
   display: flex;
   margin: auto;
   max-width: 1366px;
 }
-.descrip{
+.descrip {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.Movie-Description-informations{
+.Movie-Description-informations {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
   background-color: rgba(184, 243, 240, 0.897);
 }
-.Movie-Description-Image{
-height: 40%;
-width:40%;
+.Movie-Description-Image {
+  height: 40%;
+  width: 40%;
 }
 .Movie-Description-informations p {
   font-size: 20px;
@@ -192,25 +217,23 @@ width:40%;
   font-size: 30px;
   color: #1e1b26;
   text-align: center;
-
 }
 .Movie-Description-informations h2 {
-text-align: center;
-margin-top: 0px;
+  text-align: center;
+  margin-top: 0px;
 }
-.Movie-Description-informations h4{
+.Movie-Description-informations h4 {
   color: #1e1b26;
   text-align: center;
   margin: auto;
 }
 
-.back{
+.back {
   text-align: center;
-  
 }
-.back-btn{
+.back-btn {
   border-radius: 5px;
-  background-color: lightseagreen;
+  background-color: rgb(117, 117, 117);
   border: transparent;
   color: white;
   padding: 15px 30px;
@@ -218,19 +241,19 @@ margin-top: 0px;
   margin-top: 15px;
 }
 .back-btn:hover {
-  background-color: rgba(32, 178, 170, 0.8);
+  background-color: rgba(61, 61, 61, 0.171);
 }
 .back-btn:focus {
   outline: 0;
 }
-.trailer{
+.trailer {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.description-btn{
+.description-btn {
   border-radius: 5px;
-  background-color: lightseagreen;
+  background-color: rgba(32, 178, 171, 0.527);
   border: transparent;
   color: white;
   padding: 8px 20px;
@@ -239,12 +262,12 @@ margin-top: 0px;
   margin-left: 10px;
 }
 .description-btn:hover {
-  background-color: rgba(32, 178, 170, 0.8);
+  background-color: rgba(32, 178, 171, 0.37);
 }
 .description-btn:focus {
   outline: 0;
 }
-.star{
+.star {
   text-align: center;
   margin-top: 10px;
 }

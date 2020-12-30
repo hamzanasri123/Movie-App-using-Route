@@ -6,7 +6,7 @@ const SearchMovie = ({ setSearchMovie, ratingSearch, setRatingSearch }) => {
     <div className='search-container'>
         <input
         type='text'
-        placeholder='Type movie name to search'
+        placeholder='Search Your Movie'
         onChange={(e) => setSearchMovie(e.target.value)}
         />
         <Rate  
